@@ -1,0 +1,22 @@
+torch>=2.2
+torchaudio>=2.2
+einops>=0.7
+pyyaml>=6.0
+numpy>=1.26
+soundfile>=0.12
+tqdm>=4.66
+safetensors>=0.4
+
+# SAO VAE: diffusers.AutoencoderOobleck is the official VAE class (same weights as
+# stabilityai/stable-audio-open-1.0, subfolder="vae"). Lighter than stable-audio-tools.
+diffusers>=0.30
+huggingface-hub>=0.24
+accelerate>=0.30   # required by diffusers for some loading paths
+
+# Plotting + evaluation
+matplotlib>=3.8
+frechet-audio-distance>=0.1.2
+
+# Optional, for later evaluation extensions:
+# librosa>=0.10
+# torchmetrics

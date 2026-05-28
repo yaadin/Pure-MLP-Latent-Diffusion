@@ -1,0 +1,20 @@
+{
+  "ckpt": "experiments/020_track_b_lmlp_s4/checkpoints/step_0050000.pt",
+  "step": 50000,
+  "n_samples": 500,
+  "n_test": 200,
+  "seed": 0,
+  "nn_stft_l1": {
+    "mean": 0.23626269400119781,
+    "std": 0.030783003196120262,
+    "min": 0.17012260854244232,
+    "max": 0.38698452711105347
+  },
+  "sample_latent_stats": {
+    "mean": -0.0661482885479927,
+    "std": 0.8279517889022827,
+    "per_ch_std_mean": 0.7600300312042236,
+    "per_pos_std_mean": 0.8278327584266663
+  },
+  "wall_clock_s": 49.7
+}

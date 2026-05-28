@@ -1,0 +1,38 @@
+
+experiment_id: 003_drums_lmlp_no_fnn_z
+seed: 0
+
+data:
+  latents_dir: data/drums_pilot_latents
+  clip_seconds: 2.0
+  seq_len: 43
+
+model:
+  arch: lmlp
+  latent_channels: 64
+  embed_dim: 128
+  depth: 6
+  mlp_ratio: 2.0
+  merge_is_mlp: false
+
+train:
+  device: mps
+  batch_size: 16
+  num_steps: 100000
+  optimizer: adamw
+  lr: 2.0e-4
+  weight_decay: 0.03
+  betas: [0.9, 0.9]
+  warmup_steps: 1000
+  log_every: 100
+  ckpt_every: 5000
+  sample_every: 5000
+
+sampling:
+  num_steps: 50
+  num_samples: 8
+
+paths:
+  run_dir: experiments/003_drums_lmlp_no_fnn_z/runs
+  ckpt_dir: experiments/003_drums_lmlp_no_fnn_z/checkpoints
+  samples_dir: experiments/003_drums_lmlp_no_fnn_z/samples

@@ -1,0 +1,21 @@
+{
+  "ckpt": "experiments/010_track_a_lmlp_s1/checkpoints/step_0050000.pt",
+  "step": 50000,
+  "n_samples": 500,
+  "n_test": 200,
+  "seed": 0,
+  "nn_stft_l1": {
+    "mean": 0.09884195774793625,
+    "std": 0.1324348747730255,
+    "min": 0.018998757004737854,
+    "max": 1.325904130935669
+  },
+  "sample_latent_stats": {
+    "mean": -0.0662652850151062,
+    "std": 0.693723201751709,
+    "per_ch_std_mean": 0.5798144340515137,
+    "per_pos_std_mean": 0.6806889772415161
+  },
+  "wall_clock_s": 165.1,
+  "nn_stft_l1_method": "gpu_torch_stft_v1"
+}

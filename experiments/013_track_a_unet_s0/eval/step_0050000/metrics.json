@@ -1,0 +1,21 @@
+{
+  "ckpt": "experiments/013_track_a_unet_s0/checkpoints/step_0050000.pt",
+  "step": 50000,
+  "n_samples": 500,
+  "n_test": 200,
+  "seed": 0,
+  "nn_stft_l1": {
+    "mean": 0.12805752456188202,
+    "std": 0.16079050302505493,
+    "min": 0.019318953156471252,
+    "max": 0.9286378622055054
+  },
+  "sample_latent_stats": {
+    "mean": -0.064837746322155,
+    "std": 0.7466698288917542,
+    "per_ch_std_mean": 0.6475698947906494,
+    "per_pos_std_mean": 0.7380344271659851
+  },
+  "wall_clock_s": 168.4,
+  "nn_stft_l1_method": "gpu_torch_stft_v1"
+}

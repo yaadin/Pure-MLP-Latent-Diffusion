@@ -1,0 +1,20 @@
+{
+  "ckpt": "experiments/030_track_b_dit_200k_s0/checkpoints/step_0200000.pt",
+  "step": 200000,
+  "n_samples": 500,
+  "n_test": 200,
+  "seed": 0,
+  "nn_stft_l1": {
+    "mean": 0.27565717697143555,
+    "std": 0.046202853322029114,
+    "min": 0.17456120252609253,
+    "max": 0.4597199857234955
+  },
+  "sample_latent_stats": {
+    "mean": -0.07166342437267303,
+    "std": 0.8295448422431946,
+    "per_ch_std_mean": 0.7624820470809937,
+    "per_pos_std_mean": 0.8293662667274475
+  },
+  "wall_clock_s": 48.2
+}

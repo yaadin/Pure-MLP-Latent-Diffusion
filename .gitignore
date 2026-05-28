@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Data and checkpoints (kept out of git; tracked in experiment log.md)
+data/
+checkpoints/
+*.pt
+*.safetensors
+*.npz
+*.wav
+*.flac
+*.mp3
+
+# Experiment outputs
+experiments/*/samples/
+experiments/*/checkpoints/
+experiments/*/runs/
+experiments/*/wandb/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+.obsidian/
+*.swp
+
+# Local notes and overleaf bundles
+inbox.md
+CLAUDE.md
+2026-*.md
+research/
+paper/
+logs/
+results/

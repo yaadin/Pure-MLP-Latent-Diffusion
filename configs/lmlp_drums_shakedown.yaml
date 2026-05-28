@@ -1,0 +1,38 @@
+
+experiment_id: 001_drums_pilot_shakedown
+seed: 0
+
+data:
+  latents_dir: data/drums_pilot_latents
+  clip_seconds: 2.0
+  seq_len: 43
+
+model:
+  arch: lmlp
+  latent_channels: 64
+  embed_dim: 128
+  depth: 6
+  mlp_ratio: 2.0
+  merge_is_mlp: true
+
+train:
+  device: mps
+  batch_size: 16
+  num_steps: 2000
+  optimizer: adamw
+  lr: 2.0e-4
+  weight_decay: 0.03
+  betas: [0.9, 0.9]
+  warmup_steps: 200
+  log_every: 50
+  ckpt_every: 0
+  sample_every: 0
+
+sampling:
+  num_steps: 50
+  num_samples: 8
+
+paths:
+  run_dir: experiments/001_drums_pilot/runs/shakedown
+  ckpt_dir: experiments/001_drums_pilot/checkpoints/shakedown
+  samples_dir: experiments/001_drums_pilot/samples/shakedown
